@@ -25,6 +25,8 @@ Sitio web oficial de **Mayorking Design**, una agencia creativa enfocada en dise
 
 ```markdown
 ![Preview del sitio](img/logo-512v2.png.jpg)
+![Vista previa del sitio](img/portada.png.jpg)
+
 
 🚀 Autor
 Ivan Mayorquin
