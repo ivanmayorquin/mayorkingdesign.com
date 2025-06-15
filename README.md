@@ -23,9 +23,10 @@ Sitio web oficial de **Mayorking Design**, una agencia creativa enfocada en dise
 ## 📸 Captura del sitio
 (Si quieres agregar una imagen aquí, súbela y colócala así:)
 
-```markdown
-![Preview del sitio](img/logo-512v2.png.jpg)
-![Vista previa del sitio](img/portada.png)
+<p align="center">
+  <img src="img/portada.png" alt="Vista previa del sitio" width="600"/>
+</p>
+
 
 
 🚀 Autor
