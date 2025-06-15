@@ -1,0 +1,167 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(231, 231, 229);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Estiliza el título principal */
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #DAA520; /* Oro elegante */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: move-left-right 1.5s ease-in-out; /* Aplica la animación */
+}
+
+@keyframes move-left-right {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+/* Subtítulo - "Diseños Personalizados para tu Negocio" */
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Oro elegante */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Un poco más de sombra */
+}
+
+/* Texto de descripción */
+.description {
+    font-size: 18px;
+    font-style: italic;
+    color: #000000; /* Oro más suave para contraste */
+    margin-bottom: 20px;
+}
+
+/* Asegura que las tarjetas se organicen en 3 columnas */
+.bc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+/* Cada tarjeta ocupa 33.333% del ancho para formar 3 columnas */
+.bc-item {
+    width: calc(33.333% - 20px);
+    text-align: center;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 250px; /* Asegura que todas tengan la misma altura */
+    padding-bottom: 10px;
+}
+
+/* Ajuste de las imágenes */
+.bc-item img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Para pantallas medianas (tablets, 2 columnas) */
+@media (max-width: 900px) {
+    .bc-item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* Para móviles (1 columna) */
+@media (max-width: 600px) {
+    .bc-item {
+        width: 100%;
+    }
+}
+
+    
+.business-name {
+    height: 40px; /* Evita que nombres más largos desplacen las tarjetas */
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 8px;
+    color: #333;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    color: yellow;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Estilos del botón */
+.back-button {
+    display: inline-block;
+    background-color: yellow; /* Amarillo */
+    color: rgb(76, 0, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.back-button:hover {
+    background-color: #e6b800; /* Un poco más oscuro */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto hover en las tarjetas */
+
+
+.boton {
+    display: flex;
+    align-items: center; /* Alinear verticalmente */
+    justify-content: center; /* Centrar horizontalmente */
+    gap: 10px; /* Espacio entre el ícono y el texto */
+    background-color: #007bff; /* Azul de Bootstrap */
+    color: white;
+    padding: 16px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    border: none;
+}
+
+.boton:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Ajuste del icono */
+.boton img {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+ } /* Mantiene el ícono alineado con el texto

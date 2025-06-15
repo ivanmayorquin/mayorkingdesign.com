@@ -1,0 +1,151 @@
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(231, 231, 229);
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/*Animacion Titulo - Title*/
+.title {
+    font-size: 32px;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    color: #DAA520; /* Oro elegante */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    animation: move-left-right 1.5s ease-in-out; /* Aplica la animación */
+}
+
+@keyframes move-left-right {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(10px);
+    }
+}
+/* Subtítulo - "Diseños Personalizados para tu Negocio" */
+.subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000000; /* Oro elegante */
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Un poco más de sombra */
+}
+
+/* Texto de descripción */
+.description {
+    font-size: 18px;
+    font-style: italic;
+    color: #000000; /* Oro más suave para contraste */
+    margin-bottom: 20px;
+}
+
+
+/* Asegura que las tarjetas se organicen en 3 columnas */
+.foto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 columnas */
+    gap: 20px; /* Espaciado entre tarjetas */
+    width: 80%;
+    margin: 20px auto;
+}
+
+/* Centra el contenido dentro de cada tarjeta */
+.foto-item {
+    text-align: center;
+}
+
+/* Ajuste de las imágenes */
+.foto-item img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+/* Estiliza los nombres de los negocios */
+.business-name {
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 8px;
+    color: #000000;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    color: yellow;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos del botón */
+.back-button {
+    display: inline-block;
+    background-color: yellow; /* Amarillo */
+    color: rgb(76, 0, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.back-button:hover {
+    background-color: #e6b800; /* Un poco más oscuro */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+/* Contenedor para centrar el botón */
+.button-container {
+    color: yellow;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos del botón */
+.back-button {
+    display: inline-block;
+    background-color: yellow; /* Amarillo */
+    color: rgb(76, 0, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.back-button:hover {
+    background-color: #e6b800; /* Un poco más oscuro */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Efecto hover en las tarjetas */
+.foto-item {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.foto-item:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3); /* Agrega sombra */
+}
+
+

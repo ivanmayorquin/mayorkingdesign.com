@@ -1,0 +1,182 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Encabezado con imagen */
+.contact-header {
+    position: relative;
+    width: 100%;
+    height: 400px; /* Ajusta la altura según necesites */
+    background-image: url('../img/contact/dg-01.jpg'); /* Ruta correcta de la imagen */
+    background-position: center;
+    background-size: cover; /* Hace que la imagen cubra todo el área */
+    background-repeat: no-repeat;
+    display: flex;
+    top: 10px;
+    align-items: center;
+    justify-content: right;
+    text-align: right;
+    color: rgb(68, 0, 255);
+    z-index: 2;
+}
+
+/* Agregar una capa oscura sobre la imagen para mejorar el contraste del texto */
+.contact-header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0,5); /* Ajusta la opacidad si es necesario */
+    
+}
+
+/* Contenedor del formulario */
+.contact-section {
+    width: 90%;
+    max-width: 1000px;
+    top: 10px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact-form {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.full-width {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    height: 120px;
+}
+
+/*Boton de Enviar*/
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Contenedor para centrar el botón */
+.button-container {
+    color: yellow;
+    text-align: center;
+    margin-top: 30px;
+}
+
+/* Estilos del botón */
+.back-button {
+    display: inline-block;
+    background-color: yellow; /* Amarillo */
+    color: rgb(76, 0, 255);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Efecto al pasar el mouse */
+.back-button:hover {
+    background-color: #e6b800; /* Un poco más oscuro */
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Información de contacto */
+.contact-info {
+    width: 48%;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.contact-info p {
+    margin: 8px 0;
+    font-size: 1.1em;
+}
+
+.contact-info a {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    text-decoration: none;
+    font-size: 1.1em;
+    color: #007bff;
+    font-weight: bold;
+    margin: 0 8px;
+}
+
+.contact-info a i {
+    font-size: 1.3em;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.map-container {
+    margin-top: 25px;
+    width: 100%;
+    height: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+

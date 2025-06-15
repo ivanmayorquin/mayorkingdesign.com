@@ -1,0 +1,22 @@
+{
+    "name": "Mayorking Design",
+    "short_name": "Mayorking",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#DAA520",
+    "orientation": "portrait",
+    "icons": [
+      {
+        "src": "img/logo-192v2.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "img/logo-512v2.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ]
+  }
+  
